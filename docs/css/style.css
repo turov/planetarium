@@ -200,7 +200,7 @@ html {
   .faq__button-indicator {
     width: 22px;
     height: 22px;
-    right: 21px;
+    right: 22px;
   }
 }
 .faq__button--opened .faq__button-indicator {
