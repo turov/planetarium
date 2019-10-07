@@ -1,0 +1,142 @@
+.faq 
+  background $c-darkblack
+  padding-top 14px
+  padding-bottom 40px
+  position relative
+  @media $lg 
+    background transparent 
+    padding-top 82px
+
+.faq__anchor
+  position absolute
+  left 0
+  top -66px
+
+.faq__container 
+  position relative
+  padding-left 16px
+  @media $md 
+    width 768px 
+    margin 0 auto 
+    padding 0 20px 
+  @media $lg 
+    width 1238px 
+    margin 0 auto 
+    padding 0
+  &::before 
+    @media $lg 
+      content ''
+      background-image url('../img/boy.png')
+      width 235px
+      height 264px 
+      background-size cover 
+      position absolute 
+      bottom -40px 
+      right 0
+    @media $retina 
+      background-image url('../img/boy@2x.png')
+
+.faq__title 
+  font-size 28px 
+  line-height 32px 
+  font-weight 500
+  padding-bottom 10px
+  margin 0 10px 29px 8px 
+  border-bottom 3px solid $c-accent 
+  @media $lg 
+    font-size 44px 
+    line-height 51px 
+    display inline-block
+    vertical-align top 
+    margin-left 25px
+    padding-right 27px
+    padding-bottom 6px
+
+.faq__accordion 
+  @media $lg 
+    margin-left 25px
+    width 904px 
+
+.faq__button 
+  display block 
+  width 100% 
+  position relative
+  font-size 17px 
+  line-height 1.3
+  color $c-black 
+  font-weight 500 
+  padding 10px 40px 10px 8px 
+  background $c-white 
+  background linear-gradient(to left, $c-accent, $c-accent 32px, $c-white 32px, $c-white 100%)
+  text-align left 
+  margin-top 5px
+  @media $lg 
+    padding 18px 40px 24px 
+    font-size 21px 
+    line-height 1.3
+    background linear-gradient(to left, $c-accent, $c-accent 67px, $c-white 67px, $c-white 100%)
+  &::before
+    @media $lg 
+      content ''
+      position absolute 
+      top 50%
+      left 23px
+      transform translateY(-50%)
+      width 7px
+      height 7px
+      background $c-accent 
+      border-radius 50%
+
+.faq__button-indicator
+  display block 
+  position absolute 
+  width: 16px 
+  height 16px 
+  right 8px 
+  top 50%
+  transform translateY(-50%)
+  transition 0.4s transform ease 
+  &::before
+    position absolute
+    content ''
+    width 16px 
+    height 2px 
+    background $c-white
+    left 0 
+    top 7px 
+    @media $lg 
+      width 22px 
+  &::after
+    position absolute
+    content ''
+    width 2px 
+    height 16px 
+    background $c-white
+    left 7px
+    top 0 
+    @media $lg 
+      height 22px 
+      left 10px 
+      top -2px 
+  @media $lg 
+    width 22px 
+    height 22px 
+    right 21px 
+
+.faq__button--opened .faq__button-indicator 
+  transform translateY(-50%) rotate(45deg)
+
+.faq__answer 
+  display none
+  margin 0
+  font-size 15px 
+  line-height 1.5
+  background $c-white 
+  color $c-black 
+  font-weight 300 
+  padding 10px 32px 29px 8px
+  @media $lg 
+    padding 0 226px 33px 52px 
+
+.faq__button--opened + .faq__answer 
+  display block

@@ -1,0 +1,32 @@
+html
+  box-sizing border-box
+
+*,
+*::before,
+*::after
+  box-sizing inherit
+
+.visually-hidden:not(:focus):not(:active)
+  overflow hidden
+  position absolute
+  margin -1px
+  padding 0
+  width 1px
+  height 1px
+  border 0
+  white-space nowrap
+  -webkit-clip-path inset(100%)
+  clip-path inset(100%)
+  clip rect(0 0 0 0)
+
+.page
+  width 100%
+  min-width 320px
+  overflow-x hidden
+  background-color $c-black 
+  font-family "Ubuntu", "Arial", sans-serif
+  color $c-white 
+  font-size 15px
+  line-height 1.4  
+  font-weight 300 
+  margin 0

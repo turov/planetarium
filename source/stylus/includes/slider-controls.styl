@@ -1,0 +1,44 @@
+.slider-controls 
+  display flex 
+  flex-direction row 
+  align-items center 
+  padding 5px 10px 
+  justify-content flex-end 
+  background $c-darkblack
+  @media $md 
+    display none 
+
+.slider-controls__control 
+  display block 
+  width 61px
+  height 48px
+  position relative 
+  background $c-black 
+  outline none 
+  &:active 
+    opacity 0.7
+  &::before
+    content ''
+    position absolute 
+    width 12px 
+    height 12px 
+    top: 50%; 
+    border-left 1px solid $c-white 
+    border-bottom 1px solid $c-white 
+
+.slider-controls__control--next::before 
+  transform translateY(-50%) rotate(225deg)
+  left 20px 
+
+.slider-controls__control--prev::before 
+  transform translateY(-50%) rotate(45deg)
+  left 29px
+
+.slider-controls__numerical
+  margin-right 21px
+  font-size 18px 
+  line-height 21px
+
+.slider-controls__numerical span 
+  color alpha($c-white, 70%)
+  

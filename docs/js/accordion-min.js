@@ -1,0 +1,1 @@
+"use strict";!function(){var n=document.querySelectorAll(".faq__button"),t=null;n.forEach(function(n){n.onclick=function(){t&&t.classList.remove("faq__button--opened"),n===t?t=null:(n.classList.add("faq__button--opened"),t=n)}})}();

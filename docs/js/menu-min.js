@@ -1,0 +1,1 @@
+"use strict";!function(){var e=document.querySelector(".header"),n=e.querySelector(".header__menu-button"),o=e.querySelectorAll(".header__nav-link");e.classList.remove("header--opened"),n.onclick=function(){e.classList.toggle("header--opened")},o.forEach(function(n){n.onclick=function(){e.classList.contains("header--opened")&&e.classList.remove("header--opened")}})}();

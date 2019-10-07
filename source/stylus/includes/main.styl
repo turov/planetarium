@@ -1,0 +1,16 @@
+.main 
+  position relative
+  background-image url("../img/introbg.jpg")
+  background-repeat no-repeat 
+  background-size 100%
+  @media $retina  
+    background-image url("../img/bg@2x.jpg")
+  @media $sm
+    background-image url("../img/bg@2x.jpg")
+    @media $retina 
+      background-image url("../img/bg@3x.jpg")
+  @media $lg 
+    background-image url("../img/lgbg.jpg")
+    background-attachment fixed 
+    @media $retina 
+      background-image url("../img/lgbg@2x.jpg")
